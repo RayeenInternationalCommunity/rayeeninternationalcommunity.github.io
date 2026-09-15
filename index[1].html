@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rayeen International Community | RIC</title>
+<meta name="description" content="Rayeen International Community (RIC) — From India to the World: Unity, Education, Progress & Humanity.">
+<style>
+:root{--ink:#17352d;--green:#0f5b46;--green2:#16745a;--gold:#c89b3c;--cream:#fbf8f0;--white:#fff;--muted:#66736e;--line:#e5e9e5}
+*{box-sizing:border-box;margin:0;padding:0} body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:12px;font-weight:800}.logo{width:46px;height:46px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-size:14px;border:3px solid var(--gold)}.brand span{font-size:15px}.brand small{display:block;color:var(--muted);font-weight:500;font-size:11px}
+nav{display:flex;gap:22px;font-size:14px;font-weight:600}nav a:hover{color:var(--gold)}
+.btn{display:inline-block;padding:12px 19px;border-radius:8px;font-weight:700;border:1px solid transparent}.btn-primary{background:var(--green);color:#fff}.btn-primary:hover{background:var(--green2)}.btn-outline{border-color:var(--green);color:var(--green)}
+.hero{background:linear-gradient(135deg,#0c4c3b,#17352d 58%,#24483d);color:#fff;padding:92px 0 82px;position:relative;overflow:hidden}.hero:after{content:"RIC";position:absolute;right:-20px;bottom:-100px;font-size:260px;font-weight:900;color:rgba(255,255,255,.035)}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:55px;align-items:center;position:relative;z-index:1}.eyebrow{color:#e4c46c;font-weight:800;letter-spacing:2px;font-size:13px;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.04;margin:14px 0 18px}.hero h1 span{color:#e4c46c}.hero p{font-size:19px;max-width:720px;color:#e9efeb}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero .btn-primary{background:#d5ad52;color:#17352d}.hero .btn-outline{border-color:#c9ded5;color:#fff}
+.hero-card{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:28px}.hero-card h3{margin-bottom:12px}.hero-card li{list-style:none;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.12)}.hero-card li:last-child{border:0}
+section{padding:78px 0}.section-head{max-width:720px;margin-bottom:38px}.section-head .eyebrow{color:var(--green2)}h2{font-size:38px;line-height:1.15;margin:8px 0 13px}.lead{color:var(--muted);font-size:17px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:25px;box-shadow:0 8px 25px rgba(25,55,45,.04)}.card h3{margin:10px 0 7px}.icon{width:44px;height:44px;border-radius:10px;background:#eef5f1;display:grid;place-items:center;font-size:21px}.card p{color:var(--muted);font-size:14px}
+.stats{background:#eef4f0;padding:32px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;text-align:center}.stat strong{display:block;font-size:30px;color:var(--green)}.stat span{font-size:13px;color:var(--muted)}
+.mission{display:grid;grid-template-columns:1fr 1fr;gap:25px}.mission .card{padding:32px}
+.initiative{border-left:4px solid var(--gold)}
+.cta{background:var(--green);color:#fff;border-radius:20px;padding:48px}.cta p{color:#dbe8e2;max-width:750px;margin:10px 0 22px}
+footer{background:#102d25;color:#d7e1dd;padding:50px 0 22px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:35px}.footer-grid h4{color:#fff;margin-bottom:12px}.footer-grid a{display:block;color:#b8c9c2;font-size:14px;margin:6px 0}.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:35px;padding-top:18px;font-size:12px;color:#9fb2aa}
+.menu{display:none;background:none;border:0;font-size:24px;color:var(--ink)}
+@media(max-width:850px){nav{display:none}.menu{display:block}.hero-grid,.mission{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr 1fr}.grid-4{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.grid-3,.grid-4{grid-template-columns:1fr}.hero{padding:65px 0}.hero h1{font-size:44px}section{padding:58px 0}.nav{height:68px}.brand span{font-size:13px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><div class="logo">RIC</div><div><span>RAYEEN INTERNATIONAL COMMUNITY</span><small>From India to the World</small></div></a>
+    <nav>
+      <a href="#about">About</a><a href="#focus">Our Focus</a><a href="#initiatives">Initiatives</a><a href="#membership">Membership</a><a href="#news">News</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="#membership">Join RIC</a>
+    <button class="menu" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="container hero-grid">
+  <div>
+    <div class="eyebrow">Rayeen International Community · Established 2026</div>
+    <h1>Unity. Education.<br><span>Progress & Humanity.</span></h1>
+    <p>A community-development initiative connecting Rayeen families, students, scholars, professionals, entrepreneurs and volunteers — beginning in India with a vision for the world.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#membership">Become a Member</a><a class="btn btn-outline" href="#about">Explore RIC</a></div>
+  </div>
+  <div class="hero-card">
+    <h3>Our Roadmap</h3>
+    <ul>
+      <li>🇮🇳 Build a strong India-wide network</li>
+      <li>🎓 Make education a community priority</li>
+      <li>💼 Connect skills, careers & mentorship</li>
+      <li>🤝 Strengthen social welfare & unity</li>
+      <li>🌍 Gradually connect members worldwide</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section class="stats">
+<div class="container grid-4">
+<div class="stat"><strong>2026</strong><span>Founding Year</span></div><div class="stat"><strong>India</strong><span>Proposed Headquarters</span></div><div class="stat"><strong>Non-Profit</strong><span>Community Development</span></div><div class="stat"><strong>Global</strong><span>Long-Term Vision</span></div>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Who We Are</div><h2>A platform for collective progress</h2><p class="lead">RIC is envisioned as a non-profit, non-political community platform dedicated to unity, education, social welfare, professional development, economic empowerment and humanitarian service.</p></div>
+<div class="mission">
+<div class="card"><div class="icon">🎯</div><h3>Our Vision</h3><p>To build a connected, educated, skilled, dignified and globally engaged Rayeen community that contributes positively to society and humanity.</p></div>
+<div class="card"><div class="icon">🧭</div><h3>Our Mission</h3><p>To create practical networks, programmes and digital systems that help community members access education, opportunities, mentorship, welfare support and meaningful connections.</p></div>
+</div>
+</div>
+</section>
+
+<section id="focus">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Our Focus</div><h2>Where RIC will make a difference</h2><p class="lead">The platform is designed around measurable community needs and participation.</p></div>
+<div class="grid-3">
+<div class="card"><div class="icon">🎓</div><h3>Education First</h3><p>Scholarships, books, career guidance, higher studies and competitive-exam support.</p></div>
+<div class="card"><div class="icon">💼</div><h3>Skills & Careers</h3><p>Professional networking, jobs, skills development, entrepreneurship and mentorship.</p></div>
+<div class="card"><div class="icon">👩‍🎓</div><h3>Women & Youth</h3><p>Meaningful participation, leadership opportunities and dedicated community programmes.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>Social Welfare</h3><p>Community assistance, humanitarian service and support for families in need.</p></div>
+<div class="card"><div class="icon">🌐</div><h3>Digital Community</h3><p>A secure member portal, directory and community database developed responsibly.</p></div>
+<div class="card"><div class="icon">🫱🏽‍🫲🏾</div><h3>Unity & Dignity</h3><p>Encouraging cooperation, mutual respect, transparency and constructive community dialogue.</p></div>
+</div>
+</div>
+</section>
+
+<section id="initiatives">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Featured Initiatives</div><h2>Turning ideas into action</h2></div>
+<div class="grid-3">
+<div class="card initiative"><h3>Rayeen Education Network</h3><p>Connect students, teachers, scholars, professionals and donors to support educational advancement.</p><a class="btn btn-outline" style="margin-top:15px" href="#contact">Learn More</a></div>
+<div class="card initiative"><h3>Rayeen Jeevan Saathi</h3><p>A community-focused matrimonial initiative designed to help families find suitable Rayeen matches through a structured profile system.</p><a class="btn btn-outline" style="margin-top:15px" href="#contact">Explore</a></div>
+<div class="card initiative"><h3>Community Census & Directory</h3><p>A future digital platform for voluntary member registration, professional mapping and community resource discovery.</p><a class="btn btn-outline" style="margin-top:15px" href="#membership">Register Interest</a></div>
+</div>
+</div>
+</section>
+
+<section id="membership">
+<div class="container">
+<div class="cta">
+<div class="eyebrow">Get Involved</div><h2>Be part of the journey.</h2><p>RIC will grow through people who are willing to contribute ideas, knowledge, time, skills, professional expertise and community spirit.</p>
+<a class="btn btn-primary" href="mailto:info@rayeeninternationalcommunity.org">Register Your Interest</a>
+</div>
+</div>
+</section>
+
+<section id="news">
+<div class="container">
+<div class="section-head"><div class="eyebrow">RIC News & Activities</div><h2>Community updates</h2><p class="lead">This section will publish verified announcements, programmes, reports, events and community success stories.</p></div>
+<div class="grid-3">
+<div class="card"><div class="icon">📰</div><h3>Latest News</h3><p>Official RIC announcements and programme updates.</p></div>
+<div class="card"><div class="icon">📅</div><h3>Events</h3><p>Meetings, webinars, educational programmes and community activities.</p></div>
+<div class="card"><div class="icon">📊</div><h3>Reports</h3><p>Annual reports, project updates and transparent programme information.</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Contact</div><h2>Connect with RIC</h2><p class="lead">For membership, collaboration, volunteering, educational initiatives or community programmes, contact the RIC coordination team.</p></div>
+<div class="grid-3">
+<div class="card"><h3>📧 Email</h3><p>info@rayeeninternationalcommunity.org</p></div>
+<div class="card"><h3>🌍 Headquarters</h3><p>India · Proposed RIC Headquarters</p></div>
+<div class="card"><h3>🤝 Collaboration</h3><p>Community organisations, professionals and well-wishers are welcome to express interest.</p></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div><h4>Rayeen International Community</h4><p style="font-size:14px;color:#b8c9c2">From India to the World — Unity, Education, Progress & Humanity.</p></div>
+<div><h4>Explore</h4><a href="#about">About RIC</a><a href="#focus">Our Focus</a><a href="#initiatives">Initiatives</a><a href="#news">News</a></div>
+<div><h4>Participate</h4><a href="#membership">Membership</a><a href="#contact">Volunteer</a><a href="#contact">Collaborate</a></div>
+<div><h4>Information</h4><a href="#contact">Contact</a><a href="#">Privacy Policy</a><a href="#">Terms & Guidelines</a></div>
+</div>
+<div class="copyright">© 2026 Rayeen International Community (RIC). All rights reserved. · Non-profit, non-political community-development initiative.</div>
+</div>
+</footer>
+</body>
+</html>
